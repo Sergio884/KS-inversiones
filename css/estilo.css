@@ -1,5 +1,6 @@
 body{
     font-family: 'Lato', sans-serif;
+    margin: 0;
 }
 
 #whatsapp{
@@ -10,3 +11,117 @@ body{
 #whatsapp img{
     height: 70px;
 }
+
+
+
+
+
+
+
+
+
+
+/* Funcionamiento */
+#funcionamiento{
+    height: 170vh;
+    width: 100%;    
+    background: #fff;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+#funcionamiento .pasos{
+    position: absolute;
+    background-color: black;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 50%;
+    right: 42%;
+    transform: translate(-50%,-50%);
+    z-index: 20;
+}
+#funcionamiento .pasos p{
+    color: rgb(4, 156, 67);
+    font-size: 22px;
+    font-weight: 900;
+}
+
+#funcionamiento .contenedor{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    height: 850px;
+}
+#funcionamiento .raya{
+    position: absolute;
+    width: 3px;
+    height: 75%;
+    background-color: black;
+    top: 60px;
+    left: 49.6%;
+    z-index: 2 !important;
+}
+
+#funcionamiento .contenido{
+    position: relative;
+    left: 30px;
+    width: 90%;
+    height: 210px;
+    top: 2px !important;
+}
+#funcionamiento .revelar{
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 2s ease;
+}
+
+#funcionamiento .activo{
+    transform: translateY(0px);
+    opacity: 1;
+    z-index: 20;
+}
+
+
+.pasos .imagen{
+    left: 75px;
+    top: -10px;
+    position: absolute  ;
+    height: 140px;
+    width: 155px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pie-img{
+    color: #000 !important;
+    font-size: 15px !important;
+    margin-top: 2px;
+
+}
+
+.dos .imagen{
+    left: -170px;
+} 
+
+#relleno{
+    height: 100vh;
+    width: 100%;    
+    background-color: rgb(150, 127, 255);
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
