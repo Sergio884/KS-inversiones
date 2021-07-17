@@ -1,7 +1,96 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
+    
     font-family: 'Lato', sans-serif;
     margin: 0;
 }
+
+
+
+/**************************Intro**********************************/
+
+.contenedor-intro{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    background: linear-gradient(to top, #e0e0e091 0%, hsla(143, 63%, 41%, 0.534) 50%), url(../img/pexels-photo-6801648.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.intro-texto{
+    background-image: linear-gradient(to top, #cececee5 0%, #ffffffc7 100%);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(12, 12, 12);
+   
+    backdrop-filter: blur(5px);
+    -webkit-box-shadow: 7px 0px 14px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 0px 14px -4px rgba(0,0,0,0.75);
+    box-shadow: 7px 0px 14px -4px rgba(0,0,0,0.75);
+}
+
+.intro-texto h1{
+    font-size: 64px;
+    padding-left: 1.5rem;
+}
+
+.intro-texto p{
+    padding-left: 1.5rem;
+    margin-top: 3rem;
+    margin-right: 2rem;
+}
+
+.figura{
+    width: 30%;
+    height: 50%;
+}
+
+.botones{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    
+}
+
+.botones button{
+    width: 40%;
+    height: 250%;
+    border-radius: 0.8rem;
+    border-style: none;
+    background-color: rgba(34, 168, 105, 0.849);
+    font-size: 16px;
+    color: rgb(240, 240, 240);
+    transition: all 0.3s ease-in-out;
+}
+
+.botones button:hover{
+    background-color: rgba(24, 124, 78, 0.849);
+    -webkit-box-shadow: 2px 4px 25px -6px rgba(0, 95, 48, 0.801);
+    -moz-box-shadow: 2px 4px 25px -6px rgba(0, 95, 48, 0.801);
+    box-shadow: 2px 4px 25px -6px rgba(0, 95, 48, 0.801);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+
+
+
+
 
 #whatsapp{
     position: fixed;
@@ -27,8 +116,9 @@ body{
 
 
 
-/* Funcionamiento */
+/******************************** Funcionamiento **********************************/
 #funcionamiento{
+    margin-top: 50px;
     height: 170vh;
     width: 100%;    
     background: #fff;
@@ -149,17 +239,4 @@ body{
         height: 100px !important;
     }
 }
-
-
-#relleno{
-    height: 100vh;
-    width: 100%;    
-    background-color: rgb(51, 50, 54);
-    display: flex;
-    
-    flex-direction: column;
-    align-items: center;
-}
-
-
 
