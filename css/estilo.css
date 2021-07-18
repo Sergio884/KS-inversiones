@@ -276,8 +276,7 @@ body::-webkit-scrollbar-thumb:hover{
 
 /******************************** Funcionamiento **********************************/
 #funcionamiento{
-    
-    height: 130vh;
+    margin-bottom: 150px;
     width: 100%;    
     background: rgba(255, 255, 255);
     display: flex;    
@@ -285,10 +284,11 @@ body::-webkit-scrollbar-thumb:hover{
     align-items: center;
 }
 #funcionamiento h1{
-    margin-top: 50px;
+    margin-top: 0px;
     font-size: 35px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
+    padding-bottom: 0;
 }
 
 #funcionamiento .pasos{
@@ -306,7 +306,7 @@ body::-webkit-scrollbar-thumb:hover{
     z-index: 20;
 }
 #funcionamiento .pasos p{
-    color: #44CAE4;
+    color: #00b341;
     font-size: 30px;
     font-weight: 900;
 }
@@ -315,6 +315,7 @@ body::-webkit-scrollbar-thumb:hover{
     position: relative;
     display: flex;
     flex-direction: column;
+    padding-top: 0;
     width: 250px;
     height: 850px;
 }
@@ -382,7 +383,8 @@ body::-webkit-scrollbar-thumb:hover{
         right: 100px !important;
     }
     #funcionamiento{
-        align-items: baseline;
+        align-items: baseline;    
+        margin-bottom: 20%;
     }
     #funcionamiento h1{
         padding: 10px 10px;
@@ -409,11 +411,12 @@ body::-webkit-scrollbar-thumb:hover{
 
 /****************Opiniones********************/
 #opiniones{
+    padding-bottom: 5%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     overflow: hidden;
 }
@@ -452,14 +455,14 @@ body::-webkit-scrollbar-thumb:hover{
     left: -4%;
     background: rgba(255, 255, 255, 0.897);
     /* border: 2px solid #000; */
-    border: 2px solid rgb(12, 102, 24);
+    border: 2px solid #086d2d;
     backdrop-filter: blur(6px);
     transition: all 0.5s ease-in-out;
 }
 
 #opiniones .comentario:hover{
     transition: all 0.5s ease-in-out;
-    background: rgba(182, 255, 167, 0.89);
+    background: rgba(210, 231, 206, 0.89);
 }
 
 #opiniones .comillas{
@@ -507,14 +510,11 @@ body::-webkit-scrollbar-thumb:hover{
 #opiniones h1{
     padding-bottom: 30px;
     font-size: 35px;
-    margin-top: 0;
-    padding-top: 0;
 }
 
 
 @media (max-width:400px) {
     #opiniones h1{
-        margin-top: 130px;
         font-size: 25px;
     }
     #opiniones .comentario{
@@ -530,6 +530,8 @@ body::-webkit-scrollbar-thumb:hover{
         margin-bottom: 20px;
     }
 }
+
+
 
 
 
@@ -576,7 +578,7 @@ footer .contenedor h2:before{
     left: 0;
     width: 60px;
     height: 2px;
-    background: rgb(18, 153, 0);
+    background: #00b341;
 
 }
 .sci{
