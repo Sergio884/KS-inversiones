@@ -1,10 +1,3 @@
-
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body{
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -220,10 +213,15 @@ body::-webkit-scrollbar-thumb:hover{
 
 
 
+
+
+
+
+
+
+
 /*******************************Caracteristicas************************************/
-
 .contenedor-caracteristicas{
-
     display: grid;
     grid-template-columns: repeat(2,1fr);
     height: 100vh;
@@ -276,6 +274,7 @@ body::-webkit-scrollbar-thumb:hover{
 
 /******************************** Funcionamiento **********************************/
 #funcionamiento{
+    margin-top: 30px;
     margin-bottom: 150px;
     width: 100%;    
     background: rgba(255, 255, 255);
@@ -411,12 +410,13 @@ body::-webkit-scrollbar-thumb:hover{
 
 /****************Opiniones********************/
 #opiniones{
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
     padding-bottom: 5%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 75vh;
     width: 100%;
     overflow: hidden;
 }
@@ -453,7 +453,7 @@ body::-webkit-scrollbar-thumb:hover{
     width: 340px;    
     border-radius: 15px;
     left: -4%;
-    background: rgba(255, 255, 255, 0.897);
+    background: rgba(255, 255, 255, 1);
     /* border: 2px solid #000; */
     border: 2px solid #086d2d;
     backdrop-filter: blur(6px);
@@ -462,7 +462,7 @@ body::-webkit-scrollbar-thumb:hover{
 
 #opiniones .comentario:hover{
     transition: all 0.5s ease-in-out;
-    background: rgba(210, 231, 206, 0.89);
+    background: rgba(237, 243, 235, 1);
 }
 
 #opiniones .comillas{
@@ -494,8 +494,7 @@ body::-webkit-scrollbar-thumb:hover{
 
 #opiniones img{
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    height: 80px;
     margin-right: 5%;
 }
 
@@ -510,6 +509,7 @@ body::-webkit-scrollbar-thumb:hover{
 #opiniones h1{
     padding-bottom: 30px;
     font-size: 35px;
+    color: #fff;
 }
 
 
