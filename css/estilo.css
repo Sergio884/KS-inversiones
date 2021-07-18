@@ -288,7 +288,7 @@ body::-webkit-scrollbar-thumb:hover{
     margin-top: 0px;
     font-size: 35px;
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: 40px;
     padding-bottom: 0;
 }
 
@@ -337,13 +337,13 @@ body::-webkit-scrollbar-thumb:hover{
     height: 380px;
     top: 2px !important;
 }
-#funcionamiento .revelar{
+.revelar{
     opacity: 0;
     transform: translateY(150px);
     transition: all 2s ease;
 }
 
-#funcionamiento .activo{
+ .activo{
     transform: translateY(0px);
     opacity: 1;
     z-index: 20;
