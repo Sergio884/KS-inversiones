@@ -15,7 +15,7 @@
     <title>KS inversiones</title>
 </head>
 <body>
-    <a id="whatsapp" href="https://api.whatsapp.com/send?phone=5217321017129&text=Hola%2C%20he%20visto%20tu%20anuncio%20y%20me%20interesa%20inscribirme%20al%20curso." target="_blank">            
+    <a id="whatsapp" href="https://api.whatsapp.com/send?phone=5217321017129&text=Hola%2C%20he%20visto%20tu%20anuncio%20y%20me%20interesa%20invertir%20con%20ustedes." target="_blank">            
         <img src="img/whatsapp.png">
     </a>
 
@@ -126,6 +126,80 @@
              }
              </script>
 
+             <section id="opiniones">
+                <div class="swiper-container">
+                    <h1>Opiniones y comentarios</h1>
+                    <div class="swiper-wrapper">                      
+
+                        <div class="swiper-slide">
+                            <div class="comentario">
+                                <div class="contenido">                                   
+                                    <img class="comillas" src="img/comillas.svg"> 
+                                    <p>Me encantó el curso, desde que inicie he ganado mucho dinero y no paro de ganar</p>
+                                    <div class="persona">                                        
+                                        <img src="img/sofia.jpg">
+                                        <div class="datos">
+                                            <h4>Sofia Calderón</h4>
+                                            <h5>18/08/2020</h5>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="comentario">
+                                <div class="contenido">
+                                    <img class="comillas" src="img/comillas.svg">
+                                    <p>Esto es muy real, jamás creí ganar dinero de una forma tan fácil, no duden en inscribirse, yo lo recomiendo totalmente </p>
+                                    <div class="persona">                                        
+                                        <img src="img/sergio.jpg">
+                                        <div class="datos">
+                                            <h4>Sergio Pérez</h4>
+                                            <h5>10/07/2021</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="comentario">
+                                <div class="contenido">                          
+                                    <img class="comillas" src="img/comillas.svg">              
+                                    <p>Desde que inicie con esto no paro de ganar dinero, actualmente estoy apunto de comprar mi primera casa</p>
+                                    <div class="persona">                                        
+                                        <img src="img/max.jpg">
+                                        <div class="datos">
+                                            <h4>Max Verstappen</h4>
+                                            <h5>19/06/2021</h5>
+                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>
+                        </div>
+
+                    </div>
+                </div>    
+                 </div>
+             </section>
+             <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                  effect: 'coverflow',
+                  grabCursor: true,
+                  centeredSlides: true,
+                  slidesPerView: 'auto',
+                  coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 2,
+                    slideShadows: true,
+                  },
+                  loop:true
+                });
+            </script>
 
 
 
