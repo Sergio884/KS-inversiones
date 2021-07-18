@@ -68,7 +68,8 @@ body::-webkit-scrollbar-thumb:hover{
     background-attachment: fixed;
     transition: all 1s ease-in-out;
     background-color: linear-gradient(to top, #e0e0e091 0%, hsla(138, 84%, 48%, 0.459) 50%);
-    animation: banner 20s infinite linear;
+    animation: banner 20s infinite alternate;
+    animation-timing-function: ease-in-out;
     
 } 
 
