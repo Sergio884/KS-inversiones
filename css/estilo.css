@@ -28,9 +28,20 @@ body::-webkit-scrollbar-thumb:hover{
     
 }    
 
+#popup::-webkit-scrollbar{
+    width: 15px;
+    background-color: #e2e2e200;
 
-
-
+}
+#popup::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, #2b2b2b 25%, #25252571 100%);
+    border-radius: 10px;
+}
+#popup::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(to bottom, #1b1b1b 25%, #16161671 100%);
+    transition: all 1s ease-in-out;
+    
+} 
 
 
 
@@ -40,13 +51,13 @@ body::-webkit-scrollbar-thumb:hover{
 .contenedor-intro{
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     padding: 0;
     background: linear-gradient(to top, #e0e0e091 0%, hsla(138, 84%, 48%, 0.459) 50%), url(../img/pexels-photo-6801648.jpeg);
     background-size: cover;
     background-attachment: fixed;
-}
+} 
 
 
 
@@ -74,11 +85,18 @@ body::-webkit-scrollbar-thumb:hover{
     padding-left: 1.5rem;
     margin-top: 3rem;
     margin-right: 2rem;
+    font-size: 22px;
 }
 
 .figura{
+    transition: all 1.5s ease-in-out;
     width: 30%;
     height: 50%;
+}
+
+.ocultar-figura{
+    transition: all 1.5s ease-in-out;
+    opacity: 0;
 }
 
 .botones{
@@ -147,6 +165,9 @@ body::-webkit-scrollbar-thumb:hover{
     .intro-texto h1{
         font-size:36px;
     }
+    .contenedor-intro{
+        height: 150vh;
+    }
 }
 
 @media (max-width:350px){
@@ -169,6 +190,10 @@ body::-webkit-scrollbar-thumb:hover{
     .intro-texto h1{
         font-size:22px;
         margin-top: 5rem;
+}
+
+.contenedor-intro{
+    height: 150vh;
 }
 
 }
@@ -195,25 +220,75 @@ body::-webkit-scrollbar-thumb:hover{
 
 
 
+/*******************************Caracteristicas************************************/
 
+.contenedor-caracteristicas{
 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100vh;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+    gap:1rem;
+}
 
+.contenedor-caracteristicas h2{
+    color: #e9e9e9;
+    margin-top: 4rem;
+    grid-column: 1/3;
+    justify-self: center;
+    font-size: 36px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+.contenedor-caracteristicas .figura{
+    justify-self: center;
+    text-align: center;
+    color: #e9e9e9;
+
+}
+
+.contenedor-caracteristicas svg{
+    width: 100%;
+    justify-self: center;
+}
+
+@media (max-width:778px){
+    .contenedor-caracteristicas{
+        height: 280vh;
+        row-gap: 2rem;
+    }
+    .figura{
+        grid-column: 1/3;
+        font-size: 22px;
+    }
+}
+
+@media (max-width:290px){
+    .contenedor-caracteristicas{
+        height: 350vh;
+    }
+}
 
 
 
 /******************************** Funcionamiento **********************************/
 #funcionamiento{
-    margin-top: 50px;
+    
     height: 130vh;
     width: 100%;    
-    background: #fff;
+    background: rgba(255, 255, 255);
     display: flex;    
     flex-direction: column;
     align-items: center;
 }
 #funcionamiento h1{
+    margin-top: 50px;
     font-size: 35px;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 #funcionamiento .pasos{
@@ -375,8 +450,16 @@ body::-webkit-scrollbar-thumb:hover{
     width: 340px;    
     border-radius: 15px;
     left: -4%;
-    background: #fff;
-    border: 2px solid #000;
+    background: rgba(255, 255, 255, 0.897);
+    /* border: 2px solid #000; */
+    border: 2px solid rgb(12, 102, 24);
+    backdrop-filter: blur(6px);
+    transition: all 0.5s ease-in-out;
+}
+
+#opiniones .comentario:hover{
+    transition: all 0.5s ease-in-out;
+    background: rgba(182, 255, 167, 0.89);
 }
 
 #opiniones .comillas{
@@ -394,7 +477,8 @@ body::-webkit-scrollbar-thumb:hover{
 }
 
 #opiniones h4{
-    color: rgb(21, 6, 107);
+    /* color: rgb(21, 6, 107); */
+    color: rgb(4, 63, 29);
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 2px;
@@ -455,7 +539,8 @@ body::-webkit-scrollbar-thumb:hover{
 /****************FOOTER********************/
 footer{
     position: relative;
-    background-color: rgb(26, 23, 23);
+    /* background-color: rgb(26, 23, 23); */
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
     width: 100%;
 }
 
@@ -491,7 +576,7 @@ footer .contenedor h2:before{
     left: 0;
     width: 60px;
     height: 2px;
-    background: #f00;
+    background: rgb(18, 153, 0);
 
 }
 .sci{
@@ -519,18 +604,20 @@ footer li{
     position: fixed;
     top: -30%;
     left: 10%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(202, 255, 200, 0.76);
+    backdrop-filter: blur(6px);
     width: 80%;
     height: 80%;
     padding: 15px 15px;
     border-radius: 15px;
     z-index: 201;
     overflow-y: scroll;
-    border: 2px solid #000;
+    /* border: 2px solid #000; */
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
 }
+
 #popup.active{
     visibility: visible;
     opacity: 1;
