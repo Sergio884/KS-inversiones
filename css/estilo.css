@@ -11,6 +11,29 @@ body{
 }
 
 
+/********Scrollbar**************************************************/
+
+body::-webkit-scrollbar{
+    width: 15px;
+    background-color: #e2e2e275;
+
+}
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, #2b2b2b 25%, #25252571 100%);
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(to bottom, #1b1b1b 25%, #16161671 100%);
+    transition: all 1s ease-in-out;
+    
+}    
+
+
+
+
+
+
+
 
 /**************************Intro**********************************/
 
@@ -20,7 +43,7 @@ body{
     height: 100vh;
     width: 100%;
     padding: 0;
-    background: linear-gradient(to top, #e0e0e091 0%, hsla(143, 63%, 41%, 0.534) 50%), url(../img/pexels-photo-6801648.jpeg);
+    background: linear-gradient(to top, #e0e0e091 0%, hsla(138, 84%, 48%, 0.459) 50%), url(../img/pexels-photo-6801648.jpeg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -44,6 +67,7 @@ body{
 .intro-texto h1{
     font-size: 64px;
     padding-left: 1.5rem;
+    margin-top: 5rem;
 }
 
 .intro-texto p{
@@ -86,10 +110,68 @@ body{
     cursor: pointer;
 }
 
+@media (max-width:992px){
+    .intro-texto{
+        width: 70%;
+        justify-content: flex-start;
+        
+    }
 
+    .intro-texto h1{
+        margin-top: 7rem;
+        font-size:48px;
+    }
 
+    .intro-texto p{
+        
+        margin-top: 2rem;
+        margin-right: 2rem;
+    }
+    
 
+    .botones{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+        
+    }
+    .botones button{
+        width: 90%;
+        height: 40px;
+        margin-top: 1.5rem;
+        border-radius: 0.5rem;
+    }
+}
 
+@media (max-width:576px){
+    .intro-texto h1{
+        font-size:36px;
+    }
+}
+
+@media (max-width:350px){
+    .intro-texto {
+        justify-content: flex-start;
+    }
+    .intro-texto h1{
+        margin-top: 4rem;
+        font-size:22px;
+    }
+    .intro-texto p{
+        margin-top: 1rem;
+    }
+    .botones button{
+        margin-top: 0.8rem;
+    }
+}
+
+@media (max-width:290px){
+    .intro-texto h1{
+        font-size:22px;
+        margin-top: 5rem;
+}
+
+}
 
 #whatsapp{
     position: fixed;

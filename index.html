@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <script src="js/menu.js"></script>
     <title>KS inversiones</title>
 </head>
 <body>
@@ -19,15 +20,23 @@
     </a>
 
     <header>
-        <nav   class="contendor-nav animate__animated animate__bounceIn" style="z-index: 200;">
+        <nav   id="navegacion" class="navegacion contendor-nav animate__animated animate__bounceIn" style="z-index: 200;">
             <div class="logo">
                 <a>KS</a>
             </div>
-            <div class="navegacion">
-                <a>Inicio</a>
-                <a>Servicios</a>
-                <a>Quienes Somos</a>
-                <a>Contacto</a>
+            <button class="nav-barra" id="nav-barra">
+                <svg xmlns="http://www.w3.org/2000/svg" class=" icon icon-tabler icon-tabler-menu-2" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                </svg>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <a class="texto">Inicio</a>
+                <a class="texto">Servicios</a>
+                <a class="texto">Quienes Somos</a>
+                <a class="texto">Contacto</a>
             </div>
             
             
