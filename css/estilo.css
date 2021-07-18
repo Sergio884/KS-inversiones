@@ -52,6 +52,10 @@ body::-webkit-scrollbar-thumb:hover{
 #navegacion{
     z-index: 200;
 }
+#navegacion img{
+    height: 55px;
+    padding-top: 10px;
+}
 
 
 /**************************Intro**********************************/
