@@ -204,7 +204,7 @@ body::-webkit-scrollbar-thumb:hover{
 /******************************** Funcionamiento **********************************/
 #funcionamiento{
     margin-top: 50px;
-    height: 150vh;
+    height: 130vh;
     width: 100%;    
     background: #fff;
     display: flex;    
@@ -332,7 +332,6 @@ body::-webkit-scrollbar-thumb:hover{
 
 
 
-
 /****************Opiniones********************/
 #opiniones{
     position: relative;
@@ -423,12 +422,30 @@ body::-webkit-scrollbar-thumb:hover{
 }
 #opiniones h1{
     padding-bottom: 30px;
-    font-size: 34px;
+    font-size: 35px;
     margin-top: 0;
     padding-top: 0;
 }
 
 
+@media (max-width:400px) {
+    #opiniones h1{
+        margin-top: 130px;
+        font-size: 25px;
+    }
+    #opiniones .comentario{
+        height: 300px;
+        width: 290px; 
+        left: 1%;  
+    }
+    #opiniones p{
+        color: #000;
+        width: 60%;
+        font-size: 17px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
 
 
 
@@ -554,7 +571,7 @@ footer li{
         font-size: 20px;
     }
     footer{
-        height: 90vh;
+        height: 95vh;
     }
     footer .contenedor{
         padding-left: 10%;

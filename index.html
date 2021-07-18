@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="js/menu.js"></script>
     <title>KS inversiones</title>
 </head>
@@ -60,10 +61,7 @@
             </div>
 
         </article>
-        <article>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab magnam ullam magni tempore nisi explicabo! Odio assumenda quaerat accusamus asperiores soluta inventore cum ducimus aspernatur eveniet adipisci totam veniam sequi animi sed repudiandae temporibus dolorem, architecto impedit officiis odit optio commodi sapiente. Rem, cupiditate ipsum. Fugiat consequuntur nihil, itaque libero cupiditate nulla quia dolorum aperiam molestiae possimus incidunt veritatis necessitatibus id! Esse fugiat velit tempora rem at enim id, aspernatur, saepe quod consequatur obcaecati asperiores. Possimus beatae a suscipit exercitationem labore vel quidem quam quod non atque numquam, blanditiis nostrum nisi! Dolorem temporibus animi ducimus sint ab aperiam necessitatibus itaque quaerat impedit facere voluptas, dolores, illo vero porro provident fugit nam repellat enim cumque voluptate, nostrum ipsa molestiae sit ea? Velit error doloribus dignissimos, explicabo excepturi deserunt consectetur laudantium dicta sed voluptate necessitatibus iure, aliquid eligendi esse? Aliquam a maxime officia voluptatem. Magni quo atque ratione fuga expedita aliquam consequuntur ipsam excepturi, a aspernatur tenetur autem inventore! Accusamus itaque odit facilis reprehenderit praesentium repudiandae error ipsam eum consequuntur earum consequatur eaque, dolor repellendus ad impedit exercitationem cum porro voluptatem id beatae autem quidem? Veniam at maxime accusamus. Quisquam ipsa perspiciatis cumque recusandae libero facilis possimus similique ea voluptatum ex voluptatibus quam est, ut doloremque, at amet! Eveniet delectus dolorem eius tempora consequatur error nisi nam sequi ad blanditiis in enim expedita doloribus a, facere, cum optio voluptatum perspiciatis, impedit iusto ducimus harum. Repudiandae, minima voluptate quos nisi rerum recusandae quas dolor modi, laborum impedit voluptatem. Placeat, necessitatibus! Molestias id, in nostrum accusantium molestiae necessitatibus, fugit dolore nesciunt earum repellat aliquid. Non maxime aperiam corrupti voluptas sequi ipsum itaque molestias architecto ipsa officiis enim, cupiditate quibusdam exercitationem doloribus, et quasi. Aperiam repudiandae inventore fugit distinctio labore minus sed veniam, cum corrupti dolore assumenda doloribus sit reiciendis suscipit saepe deleniti eos quod?</p>
-        </article>
-        
+            
          <!-- #44CAE4 -->         
 
          <section id="funcionamiento">
@@ -112,8 +110,8 @@
                          </div>
                      </div>
                  </div>
+                </div>
             </section>      
-             </div>
              <script type="text/javascript">
              window.addEventListener('scroll',revelar);
  
@@ -134,11 +132,10 @@
              }
              </script>
 
-             <section id="opiniones">
+            <section id="opiniones">
                 <div class="swiper-container">
                     <h1>Opiniones y comentarios</h1>
                     <div class="swiper-wrapper">                      
-
                         <div class="swiper-slide">
                             <div class="comentario">
                                 <div class="contenido">                                   
@@ -186,31 +183,27 @@
                                 </div>                                    
                             </div>
                         </div>
-
                     </div>
                 </div>    
-                 </div>
              </section>
-             <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
             <script>
                 var swiper = new Swiper('.swiper-container', {
-                  effect: 'coverflow',
-                  grabCursor: true,
-                  centeredSlides: true,
-                  slidesPerView: 'auto',
-                  coverflowEffect: {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                coverflowEffect: {
                     rotate: 0,
                     stretch: 0,
                     depth: 100,
                     modifier: 2,
                     slideShadows: true,
-                  },
-                  loop:true
+                },
+                loop:true,
+                autoplay:true
                 });
             </script>
-
-
-
     </main>
 
     <footer class="general" id="blur">
