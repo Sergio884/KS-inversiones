@@ -61,16 +61,49 @@ body::-webkit-scrollbar-thumb:hover{
 /**************************Intro**********************************/
 
 .contenedor-intro{
+    position: relative;
     display: flex;
     flex-direction: row;
     height: 110vh;
     width: 100%;
     padding: 0;
-    background: linear-gradient(to top, #e0e0e091 0%, hsla(138, 84%, 48%, 0.459) 50%), url(../img/pexels-photo-6801648.jpeg);
-    background-size: cover;
+    background-size:100%;
+    background-position: center;
     background-attachment: fixed;
+    transition: all 1s ease-in-out;
+    background-color: linear-gradient(to top, #e0e0e091 0%, hsla(138, 84%, 48%, 0.459) 50%);
+    animation: banner 20s infinite linear;
+    
 } 
 
+.background{
+    background-color: #dffae95d;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+@keyframes banner {
+    0%{
+        background-image: url(../img/pexels-photo-6801648.jpeg);
+    }
+    33%{
+        background-image: url(../img/pexels-photo-6801648.jpeg);
+    }
+    34%{
+        background-image: url(../img/banner1.jpg);
+    }
+    66%{
+        background-image: url(../img/banner1.jpg);
+    }
+    67%{
+        background-image: url(../img/pexels2.jpeg);
+    }
+    100%{
+        background-image: url(../img/pexels2.jpeg);
+    }
+}
 
 
 .intro-texto{
